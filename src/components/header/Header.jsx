@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./header.css"
 import { Icon } from '@iconify/react';
 
 const Header = () => {
+  const [toggle, setToggle] = useState(false) 
+  
+
   return (
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">Adindu</a>
 
-        <div className="nav__menu">
+        <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className='nav__list grid'>
 
             <li className="nav__item">
@@ -54,10 +57,10 @@ const Header = () => {
             </li>
           </ul>
 
-          <Icon icon="uil:times" className='nav__close'/>
+          <Icon icon="uil:times" className='nav__close' onClick={() => setToggle(!toggle)}/>
         </div>
 
-        <div className="nav__toggle">
+        <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
           <Icon icon="uil:apps" />
         </div>
       </nav>
