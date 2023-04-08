@@ -131,7 +131,38 @@
 
 /* FOR LARGE DEVICE */
 @media screen and (max-width: 992px) {
+  .home__content{
+    grid-template-columns: 100px repeat(2, 1fr);
+  }
 
+  .home__hand{
+    width: 26px;
+    height: 26px;
+  }
+
+  .home__subtitle{
+    margin-bottom: var(--mb-1);
+    padding-left: 3.75rem;
+  }
+
+  .home__subtitle::before {
+    width: 42px;
+    top: 0.8rem;
+  }
+
+  .home__description{
+    max-width: initial;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  .home__img{
+    width: 250px;
+    height: 250px;
+  }
+
+  .home__scroll{
+    margin-left: 7rem;
+  }
 }
 
 /* FOR MEDIUM DEVICE */
