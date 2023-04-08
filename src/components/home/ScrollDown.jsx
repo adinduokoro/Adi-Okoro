@@ -43,7 +43,7 @@ const ScrollDown = () => {
           </path>
         </svg>
         <span className="home__scroll-name">Scroll Down</span>
-        <Icon icon="material-symbols:arrow-circle-down-outline-rounded" />
+        <Icon icon="material-symbols:arrow-circle-down-outline-rounded" className="home__scroll-arrow" />
       </a>
     </div>
   )

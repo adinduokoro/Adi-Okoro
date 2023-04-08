@@ -73,6 +73,18 @@
 
 @keyframes profile__animate{
   0%{
+    border-radius: 30% 20% 15% 35%/30% 15% 35% 20%;
+  }
+
+  50%{
+    border-radius: 15% 30% 35% 20%/25% 30% 15% 30%;
+  }
+
+  100%{
+    border-radius: 30% 20% 15% 35%/30% 15% 35% 20%;
+  }
+  
+  /* 0%{
     border-radius: 65% 45% 35% 75%/65% 35% 75% 45%;
   }
 
@@ -82,7 +94,7 @@
 
   100%{
     border-radius: 65% 45% 35% 75%/65% 35% 75% 45%;
-  }
+  } */
 }
 
 .home__scroll{
@@ -110,7 +122,29 @@
   margin-left: 2px;
 }
 
-.home__scroll-name{
+.home__scroll-arrow{
   font-size: 1.25rem;
   color: var(--title-color);
+}
+
+/* BREAKPOINTS */
+
+/* FOR LARGE DEVICE */
+@media screen and (max-width: 992px) {
+
+}
+
+/* FOR MEDIUM DEVICE */
+@media screen and (max-width: 768px) {
+  
+}
+
+/* FOR TABLET DEVICE */
+@media screen and (max-width: 576px) {
+  
+}
+
+/* FOR SMALL DEVICE */
+@media screen and (max-width: 350px) {
+
 }
