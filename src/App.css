@@ -72,6 +72,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 body,
 input,
 button,
@@ -83,6 +85,7 @@ textarea {
 body{
   background-color: var(--body-color);
   color: var(--text-color);
+  min-width: 320px;
 }
 
 h1, h2, h3 {
