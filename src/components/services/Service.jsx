@@ -16,7 +16,7 @@ const Service = () => {
           </div>
 
           <span className="serices__button">
-            View More
+            View More{" "}
             <Icon icon="gridicons:popout" className='services__button-icon' />
 
             <div className="services__modal">
@@ -76,3 +76,7 @@ const Service = () => {
 }
 
 export default Service
+
+// React Developer
+// Front-End Developer
+// UI/UX Designer
