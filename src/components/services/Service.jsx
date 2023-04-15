@@ -10,13 +10,14 @@ const Service = () => {
 
       <div className="services__container container grid">
         
+        {/* Service #1 */}
         <div className="services__content">
           <div>
-            <Icon icon="uim:react" />
+            <Icon icon="uim:react" className='services__icon'/>
             <h3 className="services__title">React Developer</h3>
           </div>
 
-          <span className="serices__button">
+          <span className="services__button">
             View More{" "}
             <Icon icon="gridicons:popout" className='services__button-icon' />
 
@@ -73,13 +74,14 @@ const Service = () => {
           </span>
         </div>
 
+        {/* Service #2 */}
         <div className="services__content">
           <div>
-            <Icon icon="uim:react" />
+            <Icon icon="uim:react" className='services__icon'/>
             <h3 className="services__title">React Developer</h3>
           </div>
 
-          <span className="serices__button">
+          <span className="services__button">
             View More{" "}
             <Icon icon="gridicons:popout" className='services__button-icon' />
 
@@ -136,13 +138,14 @@ const Service = () => {
           </span>
         </div>
 
+        {/* Service #3 */}
         <div className="services__content">
           <div>
-            <Icon icon="uim:react" />
+            <Icon icon="uim:react" className='services__icon'/>
             <h3 className="services__title">React Developer</h3>
           </div>
 
-          <span className="serices__button">
+          <span className="services__button">
             View More{" "}
             <Icon icon="gridicons:popout" className='services__button-icon' />
 
