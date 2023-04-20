@@ -6,6 +6,8 @@ import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Service from './components/services/Service';
 import Qualification from './components/qualification/Qualification';
+import Work from './components/portfolio/Work.jsx';
+
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
         <About />
         <Skills />
         <Service />
-        <Qualification />
+        {/* <Qualification /> */}
+        <Work />
       </main>
     </>
   );
