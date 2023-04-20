@@ -2,7 +2,7 @@ import React from "react";
 import "./work.css";
 import Works from "./Works";
 
-const Work = () => {
+const Portfolio = () => {
   return (
     <section class="work section" id="portfolio">
       <h2 class="section__title">Portfolio</h2>
@@ -12,4 +12,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Portfolio;
