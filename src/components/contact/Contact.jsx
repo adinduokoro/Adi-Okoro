@@ -90,7 +90,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className="button button--flex">
+            <button className="button button--flex send--button">
               Send Message
               <svg
                 class="button__icon"
