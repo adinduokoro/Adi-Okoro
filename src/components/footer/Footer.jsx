@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import { Icon } from '@iconify/react';
 
 const Footer = () => {
   return (
@@ -27,10 +28,28 @@ const Footer = () => {
         </ul>
 
         <div className="footer__social">
+          <a
+            href="https://www.linkedin.com/in/adindu-okoro/"
+            className="footer__social-link"
+            target="_blank"
+          >
+            <Icon icon="uil:linkedin" />
+          </a>
 
-          socials
+          <a
+            href="https://github.com/adinduokoro"
+            className="footer__social-link"
+            target="_blank"
+          >
+            <Icon icon="uil:github" />
+          </a>
 
         </div>
+
+        <span className="footer__copy">
+          &#169; Created by Adindu Okoro. All rights reserved
+        </span>
+        
       </div>
     </footer>
   )
