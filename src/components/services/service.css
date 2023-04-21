@@ -1,35 +1,35 @@
 .services__container {
   grid-template-columns: repeat(3, 270px);
-  justify-content: center;
   column-gap: 1.8rem;
+  justify-content: center;
 }
 
 .services__content {
-  position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--container-color);
+  position: relative;
   padding: 6rem 0 2rem 2.5rem;
+  background-color: var(--container-color);
 }
 
 .services__icon {
   display: block;
-  font-size: 2rem;
-  color: var(--title-color);
   margin-bottom: var(--mb-1);
+  color: var(--title-color);
+  font-size: 2rem;
 }
 
 .services__title {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
 }
 
 .services__button {
   color: var(--title-color);
-  font-size: var(--small-font-size);
-  display: inline-flex;
-  align-items: center;
   column-gap: 0.25rem;
+  display: inline-flex;
+  font-size: var(--small-font-size);
+  align-items: center;
   cursor: pointer;
 }
 
@@ -48,32 +48,32 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: var(--z-modal);
   display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
+  z-index: var(--z-modal);
   opacity: 0;
+  padding: 0 1rem;
   visibility: hidden;
   transition: .3s;
 }
 
 .services__modal-content {
-  width: 500px;
   position: relative;
-  background-color: var(--container-color);
   padding: 4.5rem 2.5rem 2.5rem;
+  width: 500px;
   border-radius: 1.5rem;
+  background-color: var(--container-color);
 }
 
 .services__modal-close {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  font-size: 1.5rem;
   color: var(--title-color);
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .services__modal-title,
@@ -82,14 +82,14 @@
 }
 
 .services__modal-title {
-  font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
+  font-size: var(--h3-font-size);
 }
 
 .services__modal-description {
-  font-size: var(--small-font-size);
   padding: 0 3.5rem;
+  font-size: var(--small-font-size);
   margin-bottom: var(--mb-2);
 }
 
@@ -99,8 +99,8 @@
 
 .services__modal-service {
   display: flex;
-  align-items: center;
   column-gap: .5rem;
+  align-items: center;
 }
 
 .services__modal-icon {
