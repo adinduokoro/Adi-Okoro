@@ -2,17 +2,17 @@ export const cardBox =  [
   {
     icon: "bx bx-star",
     title: "Experience",
-    subtitle: "8+ Years",
+    subtitle: "8+ years",
   },
   {
     icon: "bx bx-star",
-    title: "Experience",
-    subtitle: "10+ Years Working",
+    title: "Freelance",
+    subtitle: "4+ years",
   },
   {
     icon: "bx bx-star",
-    title: "Experience",
-    subtitle: "10+ Years Working",
+    title: "Projects & Repos",
+    subtitle: "60+ completed",
   },
 ]
 
