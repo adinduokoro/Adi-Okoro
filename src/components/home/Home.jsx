@@ -1,7 +1,7 @@
 import React from 'react'
 import "./home.css"
 import Social from './Social'
-import Data from './Data'
+import HomeInfo from './HomeInfo'
 import ScrollDown from './ScrollDown'
 
 
@@ -14,7 +14,7 @@ const Home = () => {
 
           <div className="home__img"></div>
 
-          <Data />
+          <HomeInfo />
         </div>
         <ScrollDown />
       </div>

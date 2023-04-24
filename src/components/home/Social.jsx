@@ -1,21 +1,19 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
+import { socialLinks } from './data';
 
 const Social = () => {
   return (
     <div className="home__social">
 
-      {/* <a href="" className="home__social-icon" target='_blank'>
-        <Icon icon="mdi:instagram" />
-      </a> */}
-
-      <a href="" className="home__social-icon" target='_blank'>
-        <Icon icon="mdi:linkedin" />
-      </a>
-
-      <a href="" className="home__social-icon" target='_blank'>
-        <Icon icon="mdi:github" />
-      </a>
+      {/* Sidebar social links */}
+      {socialLinks.map((item , index) => {
+        return(
+          <a href={item.path} className="home__social-icon" target='_blank' key={index}>
+            <Icon icon={item.icon} />
+          </a>
+        )
+      })}
 
     </div>
   )
