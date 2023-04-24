@@ -1,15 +1,21 @@
 import React from 'react'
+import { homeData } from './data'
 
 const HomeInfo = () => {
   return (
     <div className="home__data">
-      <h1 className="home__title">Adindu Okoro</h1>
-      <h3 className="home__subtitle">Software Developer</h3>
-      <p className="home__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum velit animi vel? Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-      <a href="#contact" className="button button--flex">
-        Say Hello
-      </a>
+      {homeData.map((info, index) => {
+        return(
+          <div key={index}>
+            <h1 className="home__title">{info.homeTitle}</h1>
+            <h3 className="home__subtitle">{info.homeSubtitle}</h3>
+            <p className="home__description">{info.homeDescription}</p>
+            <a href="#contact" className="button button--flex">
+              {info.buttonText}
+            </a>
+          </div>
+        )
+      })}
     </div>
   )
 }

@@ -9,4 +9,13 @@ export const socialLinks = [
   },
 ]
 
-export default { socialLinks }
+export const homeData = [
+  {
+    homeTitle: "Adindu Okoro👋🏾",
+    homeSubtitle: "Front-End React Developer",
+    homeDescription: "Hey, Im Adindu Okoro, and I am a Front-End React Developer based in Atlanta, Georgia, with a passion for solving problems and learning new things 😁.",
+    buttonText: "Say Hello" 
+  },
+]
+
+export default { socialLinks , homeData }
