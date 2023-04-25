@@ -1,16 +1,16 @@
 export const cardBox =  [
   {
-    icon: "bx bx-star",
-    title: "Experience",
+    icon: "uil:star",
+    title: "Coding Experience",
     subtitle: "8+ years",
   },
   {
-    icon: "bx bx-star",
-    title: "Freelance",
+    icon: "uil:briefcase-alt",
+    title: "Freelance Experience",
     subtitle: "4+ years",
   },
   {
-    icon: "bx bx-star",
+    icon: "uil:github-alt",
     title: "Projects & Repos",
     subtitle: "60+ completed",
   },
