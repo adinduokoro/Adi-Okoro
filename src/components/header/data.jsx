@@ -15,11 +15,6 @@ export const navs = [
     icon: "uil:file-alt"
   },
   {
-    text: "Services",
-    path: "#services",
-    icon: "mdi:briefcase-outline"
-  },
-  {
     text: "Portfolio",
     path: "#portfolio",
     icon: "uil:scenery"
