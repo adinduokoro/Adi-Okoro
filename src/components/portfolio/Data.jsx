@@ -8,18 +8,16 @@ export const projectsData = [
     image: Work1,
     title: "Example 1",
     category: "freelance",
+    demoPath: "https://www.google.com",
+    codePath: "https://icon-sets.iconify.design/tabler/source-code/",
   },
   {
     id: 2,
     image: Work2,
     title: "Example 2",
     category: "project",
-  },
-  {
-    id: 3,
-    image: Work3,
-    title: "Example 3",
-    category: "project",
+    demoPath: "",
+    codePath: "",
   },
 ];
 
