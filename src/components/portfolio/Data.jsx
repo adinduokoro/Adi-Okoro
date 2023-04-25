@@ -33,3 +33,5 @@ export const projectsNav = [
     name: "project",
   },
 ];
+
+export default { projectsData , projectsNav }
