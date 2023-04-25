@@ -45,6 +45,11 @@
   font-size: var(--normal-font-size);
 }
 
+.project__buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
 .work__button {
   width: max-content;
   color: var(--text-color);
