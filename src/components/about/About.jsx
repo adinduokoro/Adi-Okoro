@@ -3,6 +3,7 @@ import "./about.css"
 import CV from '../../assets/AdinduOkoro-CV.pdf'
 import AboutImg from '../../assets/about.jpg'
 import Info from "./Info.jsx"
+import { aboutInfo } from './data'
 
 const About = () => {
   return (
@@ -16,9 +17,21 @@ const About = () => {
         <div className="about__data">
           <Info />
 
-          <p className="about__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est eaque reiciendis deleniti iusto laborum temporibus ducimus animi illum laudantium. Laboriosam dolores repellendus cumque praesentium fugit veniam fugiat nulla pariatur!
-          </p>
+          {aboutInfo.map((data, index) => {
+            return(
+              <>
+                <p className="about__description" key={index}>
+                  {data.description1}
+                </p>
+                <p className="about__description" key={index}>
+                  {data.description2}
+                </p>
+
+              </>
+              
+            )
+          })}
+          
 
           <a href={CV} className="button button--flex"> Download CV
 
