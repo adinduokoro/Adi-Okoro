@@ -21,7 +21,7 @@ export const projectsData = [
     codePath: "https://github.com/adinduokoro/Adi-Okoro",
   },
   {
-    id: 2,
+    id: 3,
     image: Work3,
     title: "Wordpress Hosting Site",
     category: "freelance",
