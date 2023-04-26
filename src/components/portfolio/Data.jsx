@@ -1,24 +1,23 @@
-import Work1 from "../../assets/work1.jpg";
-import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
+import Work1 from "../../assets/wdftraining.png";
+import Work2 from "../../assets/adiportfolio.png";
 
 export const projectsData = [
-  //freelance or project
+  //freelance or project 1024x710
   {
     id: 1,
     image: Work1,
-    title: "Example 1",
+    title: "Firearm's Training Site",
     category: "freelance",
-    demoPath: "https://www.google.com",
-    codePath: "https://icon-sets.iconify.design/tabler/source-code/",
+    demoPath: "https://www.wdftraining.com",
+    codePath: "https://github.com/adinduokoro/Training-Site",
   },
   {
     id: 2,
     image: Work2,
-    title: "Example 2",
+    title: "Portfolio Site",
     category: "project",
     demoPath: "",
-    codePath: "",
+    codePath: "https://github.com/adinduokoro/Adi-Okoro",
   },
 ];
 
