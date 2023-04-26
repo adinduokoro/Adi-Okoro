@@ -1,8 +1,43 @@
-import React from 'react'
+import React, { useState ,useRef } from 'react'
 import "./contact.css"
 import { Icon } from '@iconify/react';
+import emailjs from '@emailjs/browser';
+
+
+
+
+
 
 const Contact = () => {
+  const [sent, setSent] = useState(false)
+
+  const form = useRef();
+
+  function sendEmail(e) {
+
+    e.preventDefault()
+
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset()
+      setSent(true)
+
+      setTimeout(() => {
+        setSent(false)
+      }, 3000)
+      
+      
+
+
+
+
+  }
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Contact Me</h2>
@@ -58,7 +93,7 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Let's Get in Touch:</h3>
 
-          <form className="contact__form">
+          <form className="contact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
               <label className="contact__form-tag">Name:</label>
               <input
@@ -66,6 +101,7 @@ const Contact = () => {
                 name="name"
                 className="contact__form-input"
                 placeholder="Insert your name"
+                required
               />
             </div>
 
@@ -76,21 +112,24 @@ const Contact = () => {
                 name="email"
                 className="contact__form-input"
                 placeholder="Insert your email"
+                required
               />
             </div>
 
             <div className="contact__form-div contact__form-area">
               <label className="contact__form-tag">Message:</label>
               <textarea
+                type="text"
                 name="message"
                 cols="30"
                 rows="10"
                 className="contact__form-input"
                 placeholder="Send a message"
+                required
               ></textarea>
             </div>
 
-            <button className="button button--flex send--button">
+            <button className="button button--flex send--button" id="submit" type="submit" value="SEND">
               Send Message
               <svg
                 class="button__icon"
@@ -111,6 +150,7 @@ const Contact = () => {
               </svg>
             </button>
           </form>
+          {sent ? <span className="send__alert">Message was Sent</span> : ""}
         </div>
 
       </div>
