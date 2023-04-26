@@ -3,6 +3,7 @@ import Work2 from "../../assets/work2.jpg";
 import Work3 from "../../assets/work3.jpg";
 
 export const projectsData = [
+  //freelance or project
   {
     id: 1,
     image: Work1,
