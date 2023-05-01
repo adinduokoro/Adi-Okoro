@@ -4,6 +4,10 @@ export const frontendSkills = [
     text: "ReactJs",
   },
   {
+    icon: "file-icons:redux",
+    text: "Redux",
+  },
+  {
     icon: "mdi:language-typescript",
     text: "Typescript",
   },
