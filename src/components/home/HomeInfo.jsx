@@ -1,5 +1,5 @@
 import React from 'react'
-import { homeData } from './data'
+import { homeData } from './data.jsx'
 
 const HomeInfo = () => {
   return (
