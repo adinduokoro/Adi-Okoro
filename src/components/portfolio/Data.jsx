@@ -1,6 +1,7 @@
 import Work1 from "../../assets/wdftraining.png";
 import Work2 from "../../assets/adiportfolio.png";
 import Work3 from "../../assets/hostingspaces.png";
+import Work4 from "../../assets/adiscontactbook.png";
 
 export const projectsData = [
   //freelance or project 1024x710
@@ -26,6 +27,14 @@ export const projectsData = [
     title: "Wordpress Hosting Site",
     category: "freelance",
     demoPath: "https://hostingspaces.net/",
+    codePath: "",
+  },
+  {
+    id: 4,
+    image: Work4,
+    title: "Contact Book using Redux",
+    category: "project",
+    demoPath: "https://contact-book-a3347.web.app/",
     codePath: "",
   },
 ];
